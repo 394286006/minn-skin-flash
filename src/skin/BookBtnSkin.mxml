@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+	<fx:Metadata><![CDATA[
+		[HostComponent("spark.components.Button")]
+	]]></fx:Metadata>
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+	</s:states>
+	<s:Rect height="29" id="rect1" radiusX="15" width="29" x="1.5" y="1.5">
+		<s:stroke>
+			<s:LinearGradientStroke caps="none" joints="miter" miterLimit="4" rotation="90" weight="1">
+				<s:GradientEntry alpha="1" color="#FFFFFF" ratio="0"/>
+				<s:GradientEntry alpha="1.0" color="#FFFFFF" ratio="0.21176470588235294"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradientStroke>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1" color="#D86666" ratio="0"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:filters>
+			<s:DropShadowFilter alpha="0.5" angle="45.0" blurX="5" blurY="5" color="0x000000" distance="4.0" hideObject="false" inner="false" knockout="false" quality="2" strength="1"/>
+		</s:filters>
+		<s:fill.up>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="#4675A3" alpha="1" ratio="0"/>
+				<s:GradientEntry color="#000000" alpha="1" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill.up>
+		<s:stroke.down>
+			<s:LinearGradientStroke weight="1" caps="none" miterLimit="4" joints="miter" rotation="90">
+				<s:GradientEntry color="#FFFFFF" alpha="1" ratio="0"/>
+				<s:GradientEntry color="#000000" alpha="1" ratio="1"/>
+			</s:LinearGradientStroke>
+		</s:stroke.down>
+		<s:fill.down>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="#073989" alpha="1" ratio="0"/>
+				<s:GradientEntry color="#000000" alpha="1" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill.down>
+	</s:Rect>
+	<s:RichText color="#FFFFFF" fontFamily="Arial" fontSize="12" id="labelDisplay0" includeIn="up" tabStops="S0" text="退出" textAlign="center" width="25" x="2" y="9">
+		<s:filters>
+			<s:DropShadowFilter alpha="0.5" angle="45.0" blurX="4.0" blurY="4.0" color="0x000000" distance="4.0" hideObject="false" inner="false" knockout="false" quality="2" strength="1"/>
+		</s:filters>
+	</s:RichText>
+	<s:RichText color="#2B4381" fontFamily="Arial" fontSize="12" id="labelDisplay1" includeIn="over" text="退出" textAlign="center" visible="false" width="25" x="2" y="9"/>
+	<s:RichText color="#2B4381" fontFamily="Arial" fontSize="12" id="labelDisplay2" includeIn="down" text="退出" textAlign="center" visible="false" width="25" x="2" y="9"/>
+	<s:RichText color="#2B4381" fontFamily="Arial" fontSize="12" id="labelDisplay3" includeIn="disabled" text="退出" textAlign="center" visible="false" width="25" x="2" y="9"/>
+	<s:RichText color="#FFFFFF" fontFamily="Arial" fontSize="12" id="labelDisplay4" includeIn="over" tabStops="S0" text="退出" textAlign="center" width="25" x="2" y="9">
+		<s:filters>
+			<s:DropShadowFilter alpha="0.5" angle="45.0" blurX="4.0" blurY="4.0" color="0x000000" distance="4.0" hideObject="false" inner="false" knockout="false" quality="2" strength="1"/>
+		</s:filters>
+	</s:RichText>
+	<s:RichText color="#FFFFFF" fontFamily="Arial" fontSize="12" id="labelDisplay5" includeIn="down" tabStops="S0" text="退出" textAlign="center" width="25" x="2" y="9">
+		<s:filters>
+			<s:DropShadowFilter alpha="0.5" angle="45.0" blurX="4.0" blurY="4.0" color="0x000000" distance="4.0" hideObject="false" inner="false" knockout="false" quality="2" strength="1"/>
+		</s:filters>
+	</s:RichText>
+	<s:RichText color="#FFFFFF" fontFamily="Arial" fontSize="12" id="labelDisplay6" includeIn="disabled" tabStops="S0" text="退出" textAlign="center" width="25" x="2" y="9">
+		<s:filters>
+			<s:DropShadowFilter alpha="0.5" angle="45.0" blurX="4.0" blurY="4.0" color="0x000000" distance="4.0" hideObject="false" inner="false" knockout="false" quality="2" strength="1"/>
+		</s:filters>
+	</s:RichText>
+	<s:transitions>
+		<s:Transition fromState="down" toState="up" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{labelDisplay0}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+				<s:Parallel target="{labelDisplay5}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+</s:Skin>

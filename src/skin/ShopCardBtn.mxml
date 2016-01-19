@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+	<fx:Metadata><![CDATA[
+		[HostComponent("spark.components.Button")]
+	]]></fx:Metadata>
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+	</s:states>
+	<s:Rect height="19" id="rect1" radiusX="2" radiusY="2" width="69" x="1" y="1">
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="#997676" alpha="1" ratio="0.06274509803921569"/>
+				<s:GradientEntry color="#000000" alpha="1" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:filters>
+			<s:DropShadowFilter blurX="4.0" hideObject="false" blurY="4.0" distance="4.0" inner="false" color="#333333" strength="1" alpha="0.5" quality="2" knockout="false" angle="63.43494882292201"/>
+		</s:filters>
+		<s:fill.over>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="#AF0000" alpha="1" ratio="0"/>
+				<s:GradientEntry color="#000000" alpha="1" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill.over>
+		<s:fill.disabled>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="#CCCCCC" alpha="1" ratio="0"/>
+				<s:GradientEntry color="#000000" alpha="1" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill.disabled>
+	</s:Rect>
+	<s:Rect alpha.disabled="0.5" height="18" includeIn="down" radiusX="1" width="67" x="1.5" y="1.5" id="rect2">
+		<s:stroke>
+			<s:LinearGradientStroke rotation="90">
+				<s:GradientEntry alpha="0.25" color="#5380D0" ratio="0"/>
+				<s:GradientEntry alpha="0" color="#5380D0" ratio="1"/>
+			</s:LinearGradientStroke>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="#3F1408" alpha="1" ratio="0"/>
+				<s:GradientEntry color="#000000" alpha="1" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+	</s:Rect>
+	<s:RichText alpha.disabled="0.5" color="#2B4381" id="labelDisplay" textAlign="center" width="68" x="1" y="6" color.up="#FEFFCA" tabStops.up="S0 S50" color.over="#FEFFCA" tabStops.over="S0 S50" color.down="#FEFFCA" tabStops.down="S0 S50" color.disabled="#999999" tabStops.disabled="S0 S50"/>
+	<s:transitions>
+		<s:Transition fromState="down" toState="up" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{rect2}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+</s:Skin>

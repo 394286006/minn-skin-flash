@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+	<fx:Metadata><![CDATA[
+		[HostComponent("spark.components.ToggleButton")]
+	]]></fx:Metadata>
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+		<s:State name="upAndSelected"/>
+		<s:State name="overAndSelected"/>
+		<s:State name="downAndSelected"/>
+		<s:State name="disabledAndSelected"/>
+	</s:states>
+	<s:Rect height="34" id="rect1" radiusX="1" width="99" x="0.5" y="0.5" alpha="1">
+		<s:stroke>
+			<s:SolidColorStroke weight="1" caps="none" miterLimit="0" joints="miter" color="#FFFFFF"/>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry color="#A55B5E" alpha="1" ratio="0"/>
+				<s:GradientEntry color="#000000" alpha="1" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+	</s:Rect>
+	<s:Rect height="18" id="rect2" includeIn="down, downAndSelected" radiusX="1" width="91" x="1.5" y="1.5">
+		<s:stroke>
+			<s:LinearGradientStroke rotation="90">
+				<s:GradientEntry alpha="0.25" color="#5380D0" ratio="0"/>
+				<s:GradientEntry alpha="0" color="#5380D0" ratio="1"/>
+			</s:LinearGradientStroke>
+		</s:stroke>
+	</s:Rect>
+	<s:RichText id="labelDisplay" textAlign="center" width="92" x="3" fontSize="16" y="9" color="#FFFFFF" tabStops="S0 S50" color.over="#AF0000" tabStops.over="S0 S50" color.upAndSelected="#FDFF00" tabStops.upAndSelected="S0 S50" color.overAndSelected="#FDFF00" tabStops.overAndSelected="S0 S50" color.down="#000000" tabStops.down="S0 S50" color.disabled="#999999" tabStops.disabled="S0 S50"/>
+</s:Skin>

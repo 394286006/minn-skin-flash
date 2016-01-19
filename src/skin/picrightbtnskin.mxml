@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+	<fx:Metadata><![CDATA[
+		[HostComponent("spark.components.Button")]
+	]]></fx:Metadata>
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+	</s:states>
+	<s:Rect blendMode="exclusion" height="79" id="rect2" radiusX="0" width="13" x="1.5" y="1.5">
+		<s:filters>
+			<s:DropShadowFilter alpha="0.5" angle="77.9052429229879" blurX="4.0" blurY="4.0" color="#FEFFCA" distance="4.0" hideObject="false" inner="false" knockout="false" quality="2" strength="1"/>
+		</s:filters>
+		<s:stroke>
+			<s:LinearGradientStroke caps="square" joints="bevel" miterLimit="4" rotation="90" weight="1">
+				<s:GradientEntry alpha="1" color="#A08C81" ratio="0"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradientStroke>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1" color="#484759" ratio="0"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+	</s:Rect>
+	<s:Path blendMode="luminosity" data="M 0.00 10.40 L 18.00 0.01 18.00 20.79 Z " height="13.874" id="path1" includeIn="up" rotation="-177.732" width="10.231" x="12.76" y="46.237">
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1" color="#999999" ratio="0"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#FFFFFF" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+	</s:Path>
+	<s:Path data="M 0.00 10.40 L 18.00 0.01 18.00 20.79 Z " height="13.874" id="path0" includeIn="over" rotation="-180" width="10.231" x="12.729" y="45.824">
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#FFFFFF" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1" color="#FFFFFF" ratio="0"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+	</s:Path>
+	<s:Path blendMode="luminosity" data="M 0.00 10.40 L 18.00 0.01 18.00 20.79 Z " height="13.874" id="path2" includeIn="down" visible="false" width="10.231" x="0.928" y="31.947">
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1" color="#999999" ratio="0"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#FFFFFF" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+	</s:Path>
+	<s:Path blendMode="luminosity" data="M 0.00 10.40 L 18.00 0.01 18.00 20.79 Z " height="13.874" id="path3" includeIn="disabled" visible="false" width="10.231" x="0.891" y="31.936">
+		<s:stroke>
+			<s:SolidColorStroke caps="square" color="#999999" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+		<s:fill>
+			<s:SolidColor color="#FFFFFF"/>
+		</s:fill>
+	</s:Path>
+	<s:Path blendMode="luminosity" data="M 0.00 10.40 L 18.00 0.01 18.00 20.79 Z " height="13.874" id="path4" includeIn="over" rotation="-177.732" visible="false" width="10.231" x="11.76" y="46.237">
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1" color="#999999" ratio="0"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#FFFFFF" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+	</s:Path>
+	<s:Path blendMode="luminosity" data="M 0.00 10.40 L 18.00 0.01 18.00 20.79 Z " height="13.874" id="path5" includeIn="down" rotation="-177.732" width="10.231" x="12.76" y="46.237">
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1" color="#999999" ratio="0"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#FFFFFF" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+	</s:Path>
+	<s:Path blendMode="luminosity" data="M 0.00 10.40 L 18.00 0.01 18.00 20.79 Z " height="13.874" id="path6" includeIn="disabled" rotation="-177.732" width="10.231" x="12.76" y="46.237">
+		<s:fill>
+			<s:LinearGradient rotation="90">
+				<s:GradientEntry alpha="1" color="#999999" ratio="0"/>
+				<s:GradientEntry alpha="1" color="#000000" ratio="1"/>
+			</s:LinearGradient>
+		</s:fill>
+		<s:stroke>
+			<s:SolidColorStroke caps="none" color="#FFFFFF" joints="miter" miterLimit="4" weight="1"/>
+		</s:stroke>
+	</s:Path>
+	<s:transitions>
+		<s:Transition fromState="over" toState="up" autoReverse="true">
+			<s:Parallel>
+				<s:Parallel target="{path1}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+				<s:Parallel target="{path0}">
+					<s:Fade duration="0"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+</s:Skin>
